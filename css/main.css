@@ -4,5 +4,43 @@ body{
 }
 .container{
     margin: 0 auto;
-    width: 1110px;
+    background-color: #D5FAFC;
+}
+.blue_box{
+    width: 705px;
+    background-color: #2EC5CE;
+    padding: 246px 95px 246px 165px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: -4px;
+}
+.blue_box_info{
+    width: 445px;
+}
+.blue_box_info h2{
+    margin-bottom: 8px;
+    font-size: 48px;
+    font-weight: 800;
+}
+.blue_box_info p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 0;
+}
+.rightside_block{
+    display: inline-block;
+    width: 570px;
+    margin-right: -4px;
+    background-color: #ffffff;
+}
+.feedback{
+    width: 490px;
+    padding-left: 40px;
+}
+.name_block{
+    width: 255px;
+}
+.feedback p{
+    font-size: 18px;
+    font-weight: 400;
 }
