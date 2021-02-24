@@ -2,20 +2,22 @@ body{
     font-family: "Manrope", sans-serif;
     color: #18191F;
 }
+#first_section{
+    background-color:  #D5FAFC;
+}
 .container{
     margin: 0 auto;
-    background-color: #D5FAFC;
+    background-color: #2EC5CE;
+    width: 1110px;
 }
 .blue_box{
-    width: 705px;
-    background-color: #2EC5CE;
-    padding: 246px 95px 246px 165px;
-    box-sizing: border-box;
     display: inline-block;
+    vertical-align: middle;
     margin-right: -4px;
 }
 .blue_box_info{
     width: 445px;
+    margin-right: 95px;
 }
 .blue_box_info h2{
     margin-bottom: 8px;
@@ -30,17 +32,44 @@ body{
 .rightside_block{
     display: inline-block;
     width: 570px;
-    margin-right: -4px;
+    margin-left: -4px;
     background-color: #ffffff;
+    margin: 0 auto;
+    margin-left: 0;
+    padding: 40px;
+    vertical-align: middle;
+}
+#quotes{
 }
 .feedback{
     width: 490px;
-    padding-left: 40px;
 }
 .name_block{
     width: 255px;
+    margin-bottom: 24px;
+}
+.name_block img{
+    vertical-align: middle;
+}
+.name{
+    display: inline-block;
+    vertical-align: middle;
+    width: 183px;
+    margin-left: 16px;
+    margin-right: -4px;
 }
 .feedback p{
     font-size: 18px;
     font-weight: 400;
+}
+#logo{
+    margin-top: 48px;
+    margin-right: 270px;
+}
+.arrows{
+    display: inline-block;
+    width: 88px;
+}
+#right_arrow{
+    margin-left: 40px;
 }
