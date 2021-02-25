@@ -1,8 +1,84 @@
 body{
     font-family: "Manrope", sans-serif;
     color: #18191F;
+    
 }
 .container{
     margin: 0 auto;
     width: 1110px;
+    background-color: #D5FAFC;
+}
+.left_col{
+    display: inline-block;
+    background-color: violet;
+    width: 540px;
+    margin-right: -4px;
+    vertical-align: top;
+}
+#big_quotes{
+    margin-top: 64px;
+}
+.h1_block{
+    width: 445px;
+    display: inline-block;
+    margin-left: 94px;
+    margin-top: -64px;
+}
+.main_text{
+    width: 445px;
+    display: inline-block;
+    background-color: yellowgreen;
+}
+.main_info{
+    margin: 32px;
+}
+h2{
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+.main_text p{
+    font-size: 18px;
+}
+.left_down{
+    width: 350px;
+    display: inline-block;
+    background-color: white;
+    margin-top: 24px;
+    margin-left: 190px;
+}
+.left_down p{
+    width: 254px;
+    display: inline-block;
+    margin-left: 16px;
+    margin-right: -4px;
+}
+.author_info{
+    margin-top: 24px;
+    width: 110px;
+    margin-left: 16px;
+}
+#author{
+    font-size: 18px;
+    font-weight: 800;
+}
+#position{
+    color: #969BAB;
+}
+.right_col{
+    width: 445px;
+    display: inline-block; 
+    background-color: tomato;
+    margin-left: 30px;
+    height: 800px;
+}
+.comment{
+    margin-top: 24px;
+}
+.comment img{
+    vertical-align: top;
+}
+.airbnb{
+    width: 445px;
+    padding: 32px;
 }
