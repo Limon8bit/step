@@ -3,21 +3,22 @@ body{
     color: #18191F;
 }
 #first_section{
-    background-color:  #D5FAFC;
+    background-color: #D5FAFC;
 }
 .container{
     margin: 0 auto;
-    background-color: #2EC5CE;
     width: 1110px;
 }
 .blue_box{
     display: inline-block;
     vertical-align: middle;
-    margin-right: -4px;
+    background-color: #2EC5CE;
+    padding-top: 210px;
+    padding-bottom: 210px;
+    padding-right: 90px;
 }
 .blue_box_info{
     width: 445px;
-    margin-right: 95px;
 }
 .blue_box_info h2{
     margin-bottom: 8px;
@@ -29,17 +30,26 @@ body{
     font-weight: 400;
     margin-right: 0;
 }
+.rightside{ 
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -4px;
+    width: 570px;
+}
 .rightside_block{
     display: inline-block;
     width: 570px;
-    margin-left: -4px;
     background-color: #ffffff;
-    margin: 0 auto;
-    margin-left: 0;
     padding: 40px;
     vertical-align: middle;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 #quotes{
+    margin-left: 410px;
 }
 .feedback{
     width: 490px;
@@ -58,17 +68,29 @@ body{
     margin-left: 16px;
     margin-right: -4px;
 }
+#position{
+    font-size: 14px;
+    color: #474A57;
+    font-weight: 400;
+}
 .feedback p{
     font-size: 18px;
     font-weight: 400;
 }
-#logo{
+.logo_and_arrows{
     margin-top: 48px;
-    margin-right: 270px;
+}
+#logo{
+    margin-right: 262px;
+    vertical-align: middle;
 }
 .arrows{
     display: inline-block;
     width: 88px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    margin-left: -4px;
+    margin-top: 13px;
 }
 #right_arrow{
     margin-left: 40px;
