@@ -94,8 +94,8 @@ h2{
 .little_block_right{
     background-color: white;
     width: 350px;
-    padding: 32px;
     margin-top: 30px;
+    display: inline-block;
 }
 .little_block_right p{
     width: 254px;
