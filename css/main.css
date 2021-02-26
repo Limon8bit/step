@@ -1,16 +1,17 @@
 body{
     font-family: "Manrope", sans-serif;
     color: #18191F;
-    
+    background-color: #D5FAFC;
+    /*для лаконичности*/
 }
 .container{
     margin: 0 auto;
     width: 1110px;
     background-color: #D5FAFC;
+    padding-bottom: 30px;
 }
 .left_col{
     display: inline-block;
-    background-color: violet;
     width: 540px;
     margin-right: -4px;
     vertical-align: top;
@@ -18,7 +19,7 @@ body{
 #big_quotes{
     margin-top: 64px;
 }
-.h1_block{
+.h1_block{ /*не меняется правый отступ почему-то*/
     width: 445px;
     display: inline-block;
     margin-left: 94px;
@@ -27,7 +28,6 @@ body{
 .main_text{
     width: 445px;
     display: inline-block;
-    background-color: yellowgreen;
 }
 .main_info{
     margin: 32px;
@@ -40,14 +40,14 @@ h2{
 .main_text p{
     font-size: 18px;
 }
-.left_down{
+.little_block{
     width: 350px;
     display: inline-block;
     background-color: white;
     margin-top: 24px;
     margin-left: 190px;
 }
-.left_down p{
+.little_block p{
     width: 254px;
     display: inline-block;
     margin-left: 16px;
@@ -56,7 +56,7 @@ h2{
 .author_info{
     margin-top: 24px;
     width: 110px;
-    margin-left: 16px;
+    margin-left: 20px;
 }
 #author{
     font-size: 18px;
@@ -64,13 +64,14 @@ h2{
 }
 #position{
     color: #969BAB;
+    font-size: 14px;
+    font-weight: 400;
 }
 .right_col{
     width: 445px;
     display: inline-block; 
-    background-color: tomato;
     margin-left: 30px;
-    height: 800px;
+    margin-top: 168px;
 }
 .comment{
     margin-top: 24px;
@@ -78,7 +79,27 @@ h2{
 .comment img{
     vertical-align: top;
 }
-.airbnb{
+.airbnb_block{
     width: 445px;
     padding: 32px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.airbnb_block .comment p{
+    width: 349px;
+    display: inline-block;
+    margin-left: 16px;
+    margin-right: -4px;
+}
+.little_block_right{
+    background-color: white;
+    width: 350px;
+    padding: 32px;
+    margin-top: 30px;
+}
+.little_block_right p{
+    width: 254px;
+    display: inline-block;
+    margin-left: 16px;
+    margin-right: -4px;
 }
