@@ -1,8 +1,50 @@
 body{
     font-family: "Manrope", sans-serif;
     color: #18191F;
+    box-sizing: border-box;
 }
 .container{
     margin: 0 auto;
-    width: 1110px;
+    width: 1062px;
+    padding: 64px 0 64px 0;
+}
+.container-images{
+    width: 540px;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+.container-images-row{
+    margin-bottom: -3px;
+}
+.container-images-row__left-img{
+    margin-right: -4px;
+}
+.chess{
+    vertical-align: top;
+}
+.bottom_row{
+    margin-top: 20px;
+}
+.container-images-row__right-img{
+    margin-left: 20px;
+}
+.container-headline{
+    display: inline-block;
+    background-color: pink;
+    width: 444px;
+    margin-left: 72px;
+    vertical-align: middle;
+}
+.container-headline h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    line-height: 54px;
+}
+.container-headline p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 40px;
 }
