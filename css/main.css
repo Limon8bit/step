@@ -5,46 +5,100 @@ body{
 }
 .container{
     margin: 0 auto;
-    width: 1062px;
+    width: 1110px;
     padding: 64px 0 64px 0;
 }
-.container-images{
+.container-img_box{
     width: 540px;
     display: inline-block;
     margin-right: -4px;
     vertical-align: middle;
 }
-.container-images-row{
-    margin-bottom: -3px;
+.container-img_box img:nth-child(1){
+    margin-right: -4px;
+    margin-bottom: 20px;
 }
-.container-images-row__left-img{
+.container-img_box img:nth-child(2){
+    margin-left: 20px;
+    margin-right: -4px;
+    margin-bottom: 20px;
+}
+.container-img_box img:nth-child(3){
+    vertical-align: top;
+    margin-top: -4px;
     margin-right: -4px;
 }
-.chess{
-    vertical-align: top;
-}
-.bottom_row{
-    margin-top: 20px;
-}
-.container-images-row__right-img{
+.container-img_box img:nth-child(4){
+    margin-top: -4px;
     margin-left: 20px;
+    margin-bottom: -3px;
+}
+.container-img_box img:hover{
+    transform: scale(1.4);
 }
 .container-headline{
     display: inline-block;
-    background-color: pink;
     width: 444px;
-    margin-left: 72px;
+    margin-left: 30px;
     vertical-align: middle;
+    padding: 0 48px 0 48px;
 }
-.container-headline h2{
+.container-headline-header{
+    margin-bottom: 40px;
+}
+.container-headline-header__title{
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 16px;
     line-height: 54px;
 }
-.container-headline p{
+.container-headline-header__subtitle{
     font-size: 18px;
     font-weight: 400;
     line-height: 32px;
+}
+.top_headline_row{
+    margin-bottom: 24px;
+}
+.container-headline-row__icon{
+    margin-right: 16px;
+    vertical-align: middle;
+}
+.container-headline-row-element{
+    display: inline-block;
+    vertical-align: middle;
+}
+.container-headline-row-element__title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 4px;
+}
+.container-headline-row-element__subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.bottom_headline_row{
     margin-bottom: 40px;
+}
+.container-headline__button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #8C30F5;
+}
+.container-headline-button__span{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: white;
+}
+.container-headline__button:hover{
+    background-color: #6919c4;
+}
+.container-headline__button:focus{
+    background-color: #440b85;
+    outline: none;
 }
