@@ -42,22 +42,33 @@ h2{
     right: 134px;
     bottom: 27px;
     z-index: 6;
-}
-.container-img_box::before{
+} 
+.container::before{
     content: "";
     width: 72px;
     height: 72px;
     border-radius: 36px;
     background-color: #FFC3D8;
     position: absolute;
-    top: 392px;
+    top: 568px;
     z-index: 2;
 }
-.container-img_box::after{
+.container-img_box::before{
     content: "";
     width: 72px;
     height: 72px;
     border-radius: 36px;
+    background-color: #C1E5C0;
+    position: absolute;
+    right: 111px;
+    top: 572px;
+    z-index: 3;
+}
+.container-img_box::after{
+    content: "";
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
     background-color: #A0DCFF;
     position: absolute;
     right: 0;
