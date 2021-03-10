@@ -4,16 +4,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <title>app</title>
-</head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Box modal</title>
+    </head>
 <body>
-    <section>
-        <div class="container">
+    <header class="network-header">
+        <div class="container-fluid">
+            <div class="row no-gutters align-items-center">
+                <div class="col">
+                    <div class="network-header__logo">
+                        <img src="img/logo.svg" alt="linkedin">
+                    </div>
+                    <!-- /.network-header__logo -->
+                </div>
+                <div class="col-3">
+                    <ul class="nav">
+                        <li class="nav-item network-menu">
+                            <a class="nav-link active network-nav__link" href="#">
+                                <svg class="network-header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 11C6.38695 11 8.67613 11.9482 10.364 13.636C12.0518 15.3239 13 17.6131 13 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 4C8.24346 4 12.3131 5.68571 15.3137 8.68629C18.3143 11.6869 20 15.7565 20 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 20C5.55228 20 6 19.5523 6 19C6 18.4477 5.55228 18 5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Feed
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link network-nav__link" href="#">
+                                <svg class="network-header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 11C6.38695 11 8.67613 11.9482 10.364 13.636C12.0518 15.3239 13 17.6131 13 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 4C8.24346 4 12.3131 5.68571 15.3137 8.68629C18.3143 11.6869 20 15.7565 20 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 20C5.55228 20 6 19.5523 6 19C6 18.4477 5.55228 18 5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Network
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link network-nav__link" href="#">
+                                <svg class="network-header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 11C6.38695 11 8.67613 11.9482 10.364 13.636C12.0518 15.3239 13 17.6131 13 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 4C8.24346 4 12.3131 5.68571 15.3137 8.68629C18.3143 11.6869 20 15.7565 20 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 20C5.55228 20 6 19.5523 6 19C6 18.4477 5.55228 18 5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Jobs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link network-nav__link" href="#">
+                                <svg class="network-header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 11C6.38695 11 8.67613 11.9482 10.364 13.636C12.0518 15.3239 13 17.6131 13 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 4C8.24346 4 12.3131 5.68571 15.3137 8.68629C18.3143 11.6869 20 15.7565 20 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 20C5.55228 20 6 19.5523 6 19C6 18.4477 5.55228 18 5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Chat
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link network-nav__link" href="#">
+                                <svg class="network-header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 11C6.38695 11 8.67613 11.9482 10.364 13.636C12.0518 15.3239 13 17.6131 13 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 4C8.24346 4 12.3131 5.68571 15.3137 8.68629C18.3143 11.6869 20 15.7565 20 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 20C5.55228 20 6 19.5523 6 19C6 18.4477 5.55228 18 5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Choices
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-8">
+                    <input type="search" placeholder="Search">
+                </div>
+            </div>
         </div>
+    </header>  
+    <section class="network">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <ul class="nav flex-column network-menu">
+                            <li class="nav-item network-menu__item">
+                              <a class="nav-link network-menu__link active" href="#">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M14.8896 5.33333V14H2.88965V5.33333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.2231 2H1.5564V5.33333H16.2231V2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5564 8H10.2231" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.889648)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                Connections</a>
+                            </li>
+                            <li class="nav-item network-menu__item">
+                              <a class="nav-link network-menu__link" href="#" active>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M14.8896 5.33333V14H2.88965V5.33333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.2231 2H1.5564V5.33333H16.2231V2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5564 8H10.2231" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.889648)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>   
+                                Connections
+                                <span>1,038</span>
+                            </a>
+                            </li>
+                            <li class="nav-item item network-menu__item">
+                              <a class="nav-link network-menu__link" href="#">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M14.8896 5.33333V14H2.88965V5.33333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.2231 2H1.5564V5.33333H16.2231V2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5564 8H10.2231" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.889648)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>   
+                                Connections
+                                <span>2</span>
+                            </a>
+                            </li>
+                            <li class="nav-item item network-menu__item">
+                                <a class="nav-link network-menu__link" href="#">
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                        <g clip-path="url(#clip0)">
+                                        <path d="M14.8896 5.33333V14H2.88965V5.33333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16.2231 2H1.5564V5.33333H16.2231V2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.5564 8H10.2231" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0">
+                                        <rect width="16" height="16" fill="white" transform="translate(0.889648)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>  
+                                    Connections
+                                    <span>26</span>
+                                </a>
+                            </li>
+                            <li class="nav-item item network-menu__item">
+                                <a class="nav-link network-menu__link" href="#">
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                        <g clip-path="url(#clip0)">
+                                        <path d="M14.8896 5.33333V14H2.88965V5.33333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16.2231 2H1.5564V5.33333H16.2231V2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.5564 8H10.2231" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0">
+                                        <rect width="16" height="16" fill="white" transform="translate(0.889648)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg> 
+                                    Connections</a>
+                            </li>
+                            <li class="nav-item item network-menu__item">
+                                <a class="nav-link network-menu__link" href="#">
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                        <g clip-path="url(#clip0)">
+                                        <path d="M14.8896 5.33333V14H2.88965V5.33333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16.2231 2H1.5564V5.33333H16.2231V2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.5564 8H10.2231" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0">
+                                        <rect width="16" height="16" fill="white" transform="translate(0.889648)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Connections</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+    
+                    <div class="col-8">
+                        <span>Текст</span>
+                    </div>
+                </div>
+                
+            </div>
+        
     </section>
+    <!-- /.section -->
+    
 </body>
 </html>

@@ -1,0 +1,20 @@
+/* ttf, otf - форматы которые предоставляются с минимальным сжатием или совсем без него.*/
+/* woff2- современный формат шрифтов с высокой степенью сжатия.  */
+/* eot для самых старых браузеров (ниже Internet Explorer 9) */
+/* ttf, otf, svg, eot - эти форматы слишкой неэффективные и нужны в браузерах, которых уже нет в нашей статистике */
+
+@font-face {
+    font-family: "GothamPro-Light";
+    font-style: normal;
+    font-weight: 300;
+    src: local("GothamPro"), /* браузер сначала попробует найти шрифт у себя локально */
+    url("../fonts/GothamPro-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "GothamPro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: local("GothamPro"),
+    url("../fonts/GothamPro-Medium.woff") format("woff");
+}
