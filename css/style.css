@@ -7,46 +7,108 @@ body {
 /* блок с шапкой и меню */
 .network-header {
 	background-color: #ffffff;
+	border-radius: 4px;
+}
+.network-header-line{
+ padding-left: 0;
+ padding-right: 0;
 }
 .network-header__logo {
 	text-align: center;
-	border-right: 1px solid red;
-	padding: 18px 0;
+	border-right: 1px solid #F4F4F4;
+	padding: 17px 0;
 	margin-right: 20px;
+	width: 130px;
 }
-.network-nav:nth-child(5) > a {
-	margin: 0 40px 0 0;
-	border-right: 1px solid red;
+.network-header-menu__item{
+	width: 90px;
+	text-align: center;
+}
+.network-header-menu__item svg{
+	display: block;
+	margin: 0 auto 10px auto;
+}
+.network-header-menu__item:nth-child(5) {
+	margin: 0 20px 0 0;
+	border-right: 1px solid #F4F4F4;
+}
+.network-header-menu__item:last-child{
+	border-right: 1px solid #F4F4F4;
 }
 .network-nav__link {
-	padding: 12px 0;
-	margin: 0 20px;
 	font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
 	color: #181818;
-	border-bottom: 2px solid transparent;
+	border-bottom: 3px solid transparent;
+    padding: 13px 0 12px 0;
+	display: block;
+
 }
 .network-nav__link:hover {
-	border-bottom: 2px solid #0275B1;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	border-bottom: 3px solid #0275B1;
 }
-.network-header__svg {
+.network-nav__link:hover svg path{
+	stroke: #0275B1;
+}
+.network-nav__link__svg {
 	display: block;
-	margin: 0 auto 14px auto;
+	margin: 0 auto;
 }
-
+.header-searchline{
+	border-right: 1px solid #F4F4F4;
+}
 input[type="search"] {
     background-image: url(../img/search.svg);
     background-repeat: no-repeat;
-    padding: 28px 30px;
+    padding: 31px 32px;
     background-position-y: center;
 	border: 0;
 	outline: none;
 }
+input[type="search"]::placeholder{
+	color: #CECECE;
+}
+.header-profile{
+	border-right: 1px solid #F4F4F4;
+    padding-top: 14px;
+    padding-bottom: 13px;
 
-
+}
+.header-profile img{
+	margin-left: 30px;
+}
+.header-profile__info{
+	margin-left: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+	font-weight: 400;
+}
+.name{
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.name span{
+	opacity: 20%;
+	margin-left: 10px;
+}
+p > span{
+	vertical-align: middle;
+	color: #02B033;
+}
+p > img{
+	vertical-align: middle;
+}
+.button_other{
+	font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+	color: #181818;
+	margin: 0 auto;
+	border-right: 1px solid #F4F4F4;
+	box-sizing: border-box;
+}
 /* блок с вертикальными пунктами меню */
 .network {
 	padding: 39px 0;
@@ -56,6 +118,7 @@ input[type="search"] {
 	background-color: #ffffff;
 	border-radius: 4px;
 	overflow: hidden;
+	margin-right: 64px;
 }
 
 .network-menu__link {
@@ -98,3 +161,178 @@ svg {
 	stroke: #747474;
 	color: #747474;
 }
+.received_button, 
+.sent_button{
+	background-color: #ffffff;
+	color: #181818;
+	border-radius: 0;
+	box-sizing: border-box;
+	vertical-align: bottom;
+	border-color: #E7E7E7;
+}
+.received_button{
+	padding: 15px 88px;
+}
+.sent_button{
+	padding: 15px 103px;
+}
+.received_button:hover, 
+.sent_button:hover{
+	background-color: #0275B1;
+	box-shadow: none;
+}
+.received_button:focus,
+.sent_button:focus{
+	background-color: #0275B1;
+	outline: none;
+	border: 0;
+	color:#ffffff;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: -10px;
+	box-shadow: none;
+}
+.received_button:active{
+box-shadow: none;
+border: none;
+outline: 0;
+}
+.offers_and_messages{
+	position: relative;
+}
+.offers_and_messages::before{
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: #b7b7b7;
+	position: absolute;
+	top: 54px;
+	left: 0;
+}
+.line{
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 50px;
+	margin: 0 auto 30px auto;
+	position: relative;
+}
+.line > span{
+	color: #0275B1;
+}
+.line::before{
+	content: "";
+	width: 48%;
+	height: 2px;
+	background-color: #b7b7b7;
+	position: absolute;
+	left: -25%;
+	bottom: 15%;
+}
+.line::after{
+	content: "";
+	width: 48%;
+	height: 2px;
+	background-color: #b7b7b7;
+	position: absolute;
+	right: -25%;
+	bottom: 15%;
+}
+.speaker{
+	background-color: #ffffff;
+	border-radius: 4px;
+	position: relative;
+	padding: 20px 30px;
+}
+.speaker_info{
+	vertical-align: middle;
+}
+.speaker_info img{
+	margin-right: 15px;
+	vertical-align: middle;
+}
+.speaker_name{
+	display: inline-block;
+	margin-left: -4px;
+	margin-right: 50px;
+	vertical-align: middle;
+}
+#name{
+	font-size: 14px;
+	font-weight: 600;
+}
+#position{
+	font-size: 10px;
+}
+#connections{
+	font-size: 10px;
+	color: #0275B1;
+}
+.speaker_message{
+	width: 300px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 6px;
+}
+.speaker_message p{
+	font-size: 10px;
+	opacity: 60%;
+	border-left: 2px solid #0275B1;
+	margin-bottom: 0;
+	padding-left: 15px;
+	vertical-align: middle;
+}
+.speaker_buttons{
+	display: inline-block;
+	margin-left: 44px;
+	padding: 7px 0 6px 0;
+}
+.accept_button, .declain_button{
+	background-color: #ffffff;
+	border: 1px solid #E7E7E7;
+	color:#E7E7E7;
+}
+.accept_button:hover, .accept_button:focus{
+	background-color: #0275B1;
+	color: #ffffff;
+}
+.declain_button:hover, .declain_button:focus{
+	background-color: #c51827;
+	color: #ffffff;
+}
+#last_speaker{
+	margin-top: 10px;
+}
+.second_line{
+	padding-top: 40px;
+	width: 100%;
+	margin-bottom: 42px;
+}
+.recent_user{
+	background-color: #ffffff;
+	border-radius: 4px;
+	padding: 20px 30px;
+	position: relative;
+	margin-bottom: 10px;
+	width: 375px;
+}
+.recent_user img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+.recent-user_info{
+	display: inline-block;
+	vertical-align: middle;
+}
+.time_and_date{
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	font-size: 10px;
+	opacity: 30%;
+}
+/*Разобрался в работе bootstrap-а только под конец выполнения домашки. 
+Проблемы с перекрытием свойств бустрапа в некоторых местах не дали сделать всё более-менее. 
+Илья, будьте добры, объясните на лекции отличие active и focus состояния кнопок, тут они пригодились.*/
