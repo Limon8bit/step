@@ -6,6 +6,7 @@ body{
 /*leftside block beginning*/
 .container_leftside{
     background-image: url(/img/background.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     display: inline-block;
     width: 666px;
@@ -24,7 +25,7 @@ body{
 }
 .container_leftside :nth-child(3){
     top: 639px;
-    left: 484px;
+    right: 149px;
 }
 .container_leftside :nth-child(4){
     bottom: 8px;
@@ -269,3 +270,22 @@ input[type="checkbox"]:hover+label::before{
     vertical-align: middle;
 }
 /*rightside block end*/
+@media (min-width: 1920px){
+    .container_leftside{
+        width: 888px;
+        height: 1024px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1439px){
+    .container_leftside{
+        display: none;
+    }
+    .container_rightside{
+        padding-left: 100px;
+    }
+}
+@media (min-width: 320px) and (max-width: 1023px){
+    .container_leftside{
+        display: none;
+    }
+}
