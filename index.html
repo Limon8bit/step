@@ -4,15 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>app</title>
 </head>
 <body>
     <section>
         <div class="container">
+            <div class="container_leftside">
+                <img src="img/dots.svg" alt="">
+                <img src="img/quotes.svg" alt="">
+                <img src="img/angle.svg" alt="">
+                <img src="img/circle.svg" alt="">
+                <div class="container_leftside_infoblock">
+                    <object
+                        type="image/svg+xml"
+                        data="img/logo.svg">
+                        <img
+                            src="logo.svg">
+                    </object>
+                    <p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>
+                    <div class="container_leftside_infoblock__author">
+                        <span>Vincent Obi</span>
+                        <object
+                            type="image/svg+xml"
+                            data="img/circle check full.svg">
+                                <img
+                                src="circle check full.svg">
+                      </object>
+                    </div>
+                </div>
+            </div>
+            <div class="container_rightside">
+                <div class="container-rightside_main_block">
+                    <div class="container-rightside_main_block__navigation">
+                        <div class="container-rightside_main_block_navigation__back">
+                            <button>
+                                <img src="img/arrow.svg" alt="">
+                                </object>
+                                <span>Back</span>
+                            </button>
+                        </div>
+                        <div class="container-rightside_main_block_navigation__about_page">
+                            <span>step 01/03</span>
+                            <span>Personal info.</span>
+                        </div>
+                        <div class="container-rightside_main_block__registration_form">
+                            <h2>Register Individual Account!</h2>
+                            <p>For the purpose of industry regulation, your details are required.</p>
+                            <form action="#">
+                                <label for="user_name">Your fullname *</label>
+                                <input id="user_name"type="text" required placeholder="Enter your fullname">
+                                <label for="user_email">Your address *</label>
+                                <input id="user_email"type="email" required placeholder="Enter email adress">
+                                <label for="user_password">Create password *</label>
+                                <input id="user_password"type="password" required placeholder="Create your own password">
+                            </form>
+                            <div class="terms_and_conditions">
+                                <input type="checkbox" id="terms_and_conditions__checkbox">
+                                <label for="terms_and_conditions__checkbox">I agree to terms & conditions</label>
+                            </div>
+                            <button class="container-rightside_main_block__button">                 
+                                Register Account
+                            </button>
+                            <div class="google_line">
+                                <span>Or</span>
+                            </div>
+                            <button class="google_button__block">
+                                <div class="google_button">
+                                    <img src="img/google_icon.svg" alt="">
+                                    <span>Register with Google</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
         </div>
     </section>
 </body>
