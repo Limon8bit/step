@@ -32,6 +32,7 @@ body{
     color: #1F1534;
     font-weight: 400;
     opacity: 50%;
+    box-sizing: border-box;
 }
 .container_1-header__nav a:active{/*Пока не знаю как исправить съезжание    текста при увеличении жирности*/
     font-weight: 700;
@@ -58,7 +59,7 @@ body{
 font-weight: 300;
 font-size: 21px;
 line-height: 32px;
-color: #d7d7d7;
+color: #7D7987;
 margin-bottom: 45px;
 }
 .container_1-description-text button{
@@ -107,7 +108,7 @@ section{
     line-height: 56px;
     margin-bottom: 26px;
 }
-.container_2-description__line{
+.black_line{
     width: 56px;
     height: 2px;
     border-radius: 1px;
@@ -138,10 +139,12 @@ section{
     border-radius: 20px;
 }
 /* Отладить блоки, в частности картинки */
-.container_2-description__button{
-    width: 200px ;
+.white_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
     height: 56px;
-    text-align: center;
     font-weight: 700;
     font-size: 18px;
     color: #458FF6;
@@ -151,14 +154,24 @@ section{
     box-sizing: border-box;
     transition: .4s
 }
-.container_2-description__button:hover{
+.white_button:hover{
     cursor: pointer;
     background-color: #458FF6;
     color: #ffffff;
     transition: .4s;
 }
-.container_2-description__button:active,
-.container_2-description__button:focus{
+.white_button svg {
+    padding-left: 15px;
+}
+.white_button svg path{
+    transition: .4s;
+}
+.white_button:hover svg path{
+    fill: #ffffff;
+    transition: .4s;
+}
+.white_button:active,
+.white_button:focus{
     outline: none;
 }
 /* Конец второго блока, начало третьего */
@@ -186,3 +199,151 @@ section{
     padding-right: 40PX;
     margin-bottom: 37PX;
 }
+.container_4{
+    width: 1156px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 266px;
+}
+.container_4-description h3{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    padding-bottom: 30px;
+}
+.container_4-description p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+    padding-bottom: 40px;
+}
+.container_5{
+    width: 1120px;
+    background-image: url(/img/section5_bcgimg.jpg);
+    color: #ffffff;
+}
+.container_5-main_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+}
+.container_5-main_block h3{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    padding-bottom: 25px;
+}
+.white_line{
+    width: 56px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #ffffff;
+    margin-bottom: 66px;
+}
+.container_5-main_block-feedback{
+    width: 884px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    align-items: center;
+}
+.container_5-main_block-feedback__user{
+    display: flex;
+    width: 354px;
+    align-items: center;
+}
+.container_5-main_block-feedback__user img{
+    border-radius: 70px;
+}
+.container_5-main_block-feedback-user__user_info{
+    width: 184px;
+    padding-left: 29px;
+}
+.container_5-main_block-feedback-user__user_info span:first-child{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 48px;
+}
+.container_5-main_block-feedback-user__user_info span:last-child{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 48px;
+}
+.container_5-main_block-feedback p{
+    width: 420px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+}
+.pseudoslider{
+    padding-top: 42px;
+    padding-bottom: 216px;
+}
+.container_6{
+    width: 1120px;
+}
+.container_6-main_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_6-main_block h3{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    padding-bottom: 26px;
+}
+.black_line:last-child{
+    margin-bottom: 80px;
+}
+.container_6-main_block-storage{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 70px;
+}
+.container_6-main_block-storage__block{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    align-items: center;
+}
+.container_6-main_block-storage__block img{
+    padding-bottom: 21px;
+}
+.container_6-main_block-storage-block_info{
+    width: 266px;
+    padding-bottom: 35px;
+}
+.container_6-main_block-storage-block_info h4{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+    padding-bottom: 12px;
+}
+.container_6-main_block-storage-block_info p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7D7987;
+    padding-bottom: 25px;
+}
+.container_6-main_block-storage-block_info a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    color: #4089ED;
+    display: flex;
+    align-items: center;
+}
+.container_6-main_block-storage-block_info a svg{
+    padding-left: 10px;
+}  
