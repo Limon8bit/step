@@ -30,14 +30,15 @@ body{
     padding-left: 40px;
     text-decoration: none;
     color: #1F1534;
-    font-weight: 400;
+    font-weight: 700;
     opacity: 50%;
     box-sizing: border-box;
 }
-.container_1-header__nav a:active{/*Пока не знаю как исправить съезжание    текста при увеличении жирности*/
-    font-weight: 700;
+.container_1-header__nav a:focus{
     opacity: 100%;
+    outline: none;
 }
+/* Сделал не как по макету немного, ибо не смог сделать изменение толщины текста без расталкивания ближайших элементов */
 .container_1-header__nav a:first-child{
     padding-left: 0;
 }
@@ -56,11 +57,11 @@ body{
     margin-bottom: 25px;
 }
 .container_1-description-text p{
-font-weight: 300;
-font-size: 21px;
-line-height: 32px;
-color: #7D7987;
-margin-bottom: 45px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+    color: #7D7987;
+    margin-bottom: 45px;
 }
 .container_1-description-text button{
     width: 200px;
@@ -285,20 +286,21 @@ section{
 }
 .container_6{
     width: 1120px;
+    padding-bottom: 200px;
 }
 .container_6-main_block{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.container_6-main_block .black_line{
+    margin-bottom: 80px;
+}
 .container_6-main_block h3{
     font-weight: 700;
     font-size: 36px;
     line-height: 56px;
     padding-bottom: 26px;
-}
-.black_line:last-child{
-    margin-bottom: 80px;
 }
 .container_6-main_block-storage{
     display: flex;
@@ -347,3 +349,57 @@ section{
 .container_6-main_block-storage-block_info a svg{
     padding-left: 10px;
 }  
+footer{
+    background-image: url(/img/footer-bg.svg);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 110px 0;
+}
+.container_7{
+    width: 1196px;
+    display: flex;
+    height: 201px;
+    display: flex;
+    justify-content: space-between;
+}
+.container_7-company_info{
+    width: 391px;
+    color: #ffffff;
+}
+.container_7-company_info img{
+    padding-bottom: 17px;
+}
+.container_7-company_info p:nth-child(2){
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 31px;
+}
+.container_7-company_info p:nth-child(3){
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+}
+ul{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 60px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+}
+li{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+}
+li a{
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
