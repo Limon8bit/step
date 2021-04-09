@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="slick-slider/slick.css">
+    <link rel="stylesheet" href="slick-slider/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Trafalgar</title>
 </head>
@@ -168,26 +170,66 @@
             <img src="img/section4_img.svg" alt="section4_img">
         </div>
         <div class="container_5">
-            <div class="container_5-main_block">
-                <h3>What our customer are saying</h3>
-                <div class="white_line"></div>
-                <div class="container_5-main_block-feedback">
-                    <div class="container_5-main_block-feedback__user">
-                        <img src="img/user_photo.jpg" alt="user_photo.jpg">
-                        <div class="container_5-main_block-feedback-user__user_info">
-                            <span>Edward Newgate</span>
-                            <span>Founder circle</span>
+            <div>
+                <div class="container_5-main_block">
+                    <h3>What our customer are saying</h3>
+                    <div class="white_line"></div>
+                    <div class="container_5-main_block-feedback">
+                        <div class="container_5-main_block-feedback__user">
+                            <img src="img/user_photo.jpg" alt="user_photo.jpg">
+                            <div class="container_5-main_block-feedback-user__user_info">
+                                <span>Edward Newgate</span>
+                                <span>Founder circle</span>
+                            </div>
                         </div>
+                        <p>
+                            “Our dedicated patient engagement app and 
+                            web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                            or administrative hassle) and securely”
+                        </p>
                     </div>
-                    <p>
-                        “Our dedicated patient engagement app and 
-                        web portal allow you to access information instantaneously (no tedeous form, long calls, 
-                        or administrative hassle) and securely”
-                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="container_5-main_block">
+                    <h3>What our customer are saying</h3>
+                    <div class="white_line"></div>
+                    <div class="container_5-main_block-feedback">
+                        <div class="container_5-main_block-feedback__user">
+                            <img src="img/user_photo.jpg" alt="user_photo.jpg">
+                            <div class="container_5-main_block-feedback-user__user_info">
+                                <span>Edward Newgate</span>
+                                <span>Founder circle</span>
+                            </div>
+                        </div>
+                        <p>
+                            “Our dedicated patient engagement app and 
+                            web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                            or administrative hassle) and securely”
+                        </p>
+                    </div>
+                </div>
+            </div><div>
+                <div class="container_5-main_block">
+                    <h3>What our customer are saying</h3>
+                    <div class="white_line"></div>
+                    <div class="container_5-main_block-feedback">
+                        <div class="container_5-main_block-feedback__user">
+                            <img src="img/user_photo.jpg" alt="user_photo.jpg">
+                            <div class="container_5-main_block-feedback-user__user_info">
+                                <span>Edward Newgate</span>
+                                <span>Founder circle</span>
+                            </div>
+                        </div>
+                        <p>
+                            “Our dedicated patient engagement app and 
+                            web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                            or administrative hassle) and securely”
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <img class="pseudoslider" src="img/arrow nav.svg" alt="slider">
         <div class="container_6">
             <div class="container_6-main_block">
                 <h3>Check out our latest article</h3>
@@ -278,5 +320,18 @@
             </ul>
         </div>
     </footer>
+    <script src="js/jquery.js"></script>
+    <script src="slick-slider/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.container_5').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            prevArrow: '<div class="slider-arrow slider-arrow-prev"></div>',
+            nextArrow: '<div class="slider-arrow slider-arrow-next"></div>'
+        });
+    </script>
 </body>
 </html>
