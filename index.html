@@ -4,16 +4,442 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="slick-slider/slick.css">
+    <link rel="stylesheet" href="slick-slider/slick-theme.css">
     <title>app</title>
 </head>
 <body>
-    <section>
-        <div class="container">
+    <header>
+        <div class="topNav-menu">
+            <img src="images/logo.svg" alt="logo.svg">
+            <div class="topNav-menu-links">
+                <a href="#">Мебель</a>
+                <a href="#">Освещение</a>
+                <a href="#">Текстиль</a>
+            </div>
+            <div class="topNav-menu-rightPanel">
+                <img src="images/search.svg" alt="search">
+                <img src="images/bag.svg" alt="bag">
+            </div>
+        </div>
+        <div class="logoText">
+            Дизайнерская мебель
+        </div>
+        <div class="sliderWrap">
+            <div class="slider">
+                <div>
+                    <div class="slider-block">
+                        <div class="slider-block-description">
+                            <p>Кресло “Антиква”</p>
+                            <div class="slider-block-description-text"> 
+                                <span class="slider-block-description-text__price">$380</span>
+                                <span class="slider-block-description-text__sell_price">$240</span>
+                            </div> 
+                            <button class="slider-block-description__button">Купить</button>
+                        </div>
+                        <img src="images/topSliderChair-withoutBG.png" alt="">
+                    </div>
+                </div>   
+                <div>
+                    <div class="slider-block">
+                        <div class="slider-block-description">
+                            <p>Кресло “Антиква”</p>
+                            <div class="slider-block-description-text"> 
+                                <span class="slider-block-description-text__price">$380</span>
+                                <span class="slider-block-description-text__sell_price">$240</span>
+                            </div> 
+                            <button class="slider-block-description__button">Купить</button>
+                        </div>
+                        <img src="images/homer.png" alt=""> <!--Картинка для понимания скорости затухания и появления следующего слайда. -->
+                    </div>
+                </div>   
+                <div>
+                    <div class="slider-block">
+                        <div class="slider-block-description">
+                            <p>Кресло “Антиква”</p>
+                            <div class="slider-block-description-text"> 
+                                <span class="slider-block-description-text__price">$380</span>
+                                <span class="slider-block-description-text__sell_price">$240</span>
+                            </div> 
+                            <button class="slider-block-description__button">Купить</button>
+                        </div>
+                        <img src="images/topSliderChair-withoutBG.png" alt="">
+                    </div>
+                </div>   
+                <div>
+                    <div class="slider-block">
+                        <div class="slider-block-description">
+                            <p>Кресло “Антиква”</p>
+                            <div class="slider-block-description-text"> 
+                                <span class="slider-block-description-text__price">$380</span>
+                                <span class="slider-block-description-text__sell_price">$240</span>
+                            </div> 
+                            <button class="slider-block-description__button">Купить</button>
+                        </div>
+                        <img src="images/topSliderChair-withoutBG.png" alt="">
+                    </div>
+                </div>   
+            </div>
+        </div>
+    <ul class="topSliderDots"></ul>
+    </header>
+    <section class="latest">
+        <div class="latest-storage">
+            <div class="latest-storage-block">
+                <div>
+                    <span>Новинки</span>
+                    <div></div>
+                </div> 
+            </div>
+            <div class="latest-storage-block">
+                <img src="images/twighlight.png" alt="twighlight.png">
+                <div>
+                    <span class="latest-storage-block__item">Стул «Смеркается»</span>
+                    <span class="latest-storage-block__price">$280</span>
+                </div>
+            </div>
+            <div class="latest-storage-block">
+                <img src="images/cloud.png" alt="cloud.png">
+                <div>
+                    <span class="latest-storage-block__item">Люстра «Облако»</span>
+                    <span class="latest-storage-block__price">$250</span>
+                </div>
+            </div><div class="latest-storage-block">
+                <img src="images/ice-cream.png" alt="ice-cream.png">
+                <div>
+                    <span class="latest-storage-block__item">Стол «Крем брюле»</span>
+                    <span class="latest-storage-block__price">$320</span>
+                </div>
+            </div>
+        </div>
+        <div class="latest-bigBlock">
+            <img src="images/whiteChokolate.png" alt="">
+            <div>
+                <span class="latest-storage-block__item">Стол «Крем брюле»</span>
+                <span class="latest-storage-block__price">$320</span>
+            </div>
         </div>
     </section>
-</body>
+    <section class="feedback">
+        <div class="feedback-feedbackSlider">
+            <div>
+                <div class="feedback-feedbackSlider-user">
+                    <img src="images/userPhoto.png" alt="userPhoto.png" class="feedback-feedbackSlider-user__userPhoto">
+                    <div class="feedback-feedbackSlider-user-userInformation">
+                        <span class="feedback-feedbackSlider-user-userInformation__userName"> 
+                            Елена Новикова
+                        </span>
+                        <span class="feedback-feedbackSlider-user-userInformation__userPosition">
+                            студентка
+                        </span>
+                    </div>
+                    <p class="feedback-feedbackSlider-user__userFeedback">
+                        «Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="feedback-feedbackSlider-user">
+                    <img src="images/userPhoto.png" alt="userPhoto.png" class="feedback-feedbackSlider-user__userPhoto">
+                    <div class="feedback-feedbackSlider-user-userInformation">
+                        <span class="feedback-feedbackSlider-user-userInformation__userName"> 
+                            Елена Новикова
+                        </span>
+                        <span class="feedback-feedbackSlider-user-userInformation__userPosition">
+                            студентка
+                        </span>
+                    </div>
+                    <p class="feedback-feedbackSlider-user__userFeedback">
+                        «Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="feedback-feedbackSlider-user">
+                    <img src="images/userPhoto.png" alt="userPhoto.png" class="feedback-feedbackSlider-user__userPhoto">
+                    <div class="feedback-feedbackSlider-user-userInformation">
+                        <span class="feedback-feedbackSlider-user-userInformation__userName"> 
+                            Елена Новикова
+                        </span>
+                        <span class="feedback-feedbackSlider-user-userInformation__userPosition">
+                            студентка
+                        </span>
+                    </div>
+                    <p class="feedback-feedbackSlider-user__userFeedback">
+                        «Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="feedback-feedbackSlider-user">
+                    <img src="images/userPhoto.png" alt="userPhoto.png" class="feedback-feedbackSlider-user__userPhoto">
+                    <div class="feedback-feedbackSlider-user-userInformation">
+                        <span class="feedback-feedbackSlider-user-userInformation__userName"> 
+                            Елена Новикова
+                        </span>
+                        <span class="feedback-feedbackSlider-user-userInformation__userPosition">
+                            студентка
+                        </span>
+                    </div>
+                    <p class="feedback-feedbackSlider-user__userFeedback">
+                        «Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
+                    </p>
+                </div>
+            </div>
+        </div>
+        <ul class="middleSliderDots"></ul>
+    </section>
+    <section class="lastChance">
+        <div class="lastChance-titleBlock">
+            <span>Последний шанс</span>
+            <div></div>
+        </div> 
+        <div class="lastChance-sortItem">
+            <a href="" autofocus>Стулья</a>
+            <a href="">Диваны</a>
+            <a href="">Кресла</a>
+        </div>
+        <div class="lastChance-storage">
+            <div class="lastChance-storage-slider">
+                <div>
+                    <div class="lastChance-storage-slider-block">
+                        <div class="lastChance-storage-slider-block-description">
+                            <span class="lastChance-storage-slider-block-description__itemTitle">
+                                Стул «Карамель»
+                            </span>
+                            <div class="lastChance-storage-slider-block-description-priceBlock">
+                                <span class="lastChance-storage-slider-block-description-priceBlock__newPrice">
+                                    $195
+                                </span>
+                                <span class="lastChance-storage-slider-block-description-priceBlock__oldPrice">
+                                    $245
+                                </span>
+                            </div>  
+                        </div>
+                        <img src="images/lastChance/caramel.png" alt="caramel.png"> 
+                        <button class="lastChance-storage-slider-block__button">Купить</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="lastChance-storage-slider-block">
+                        <div class="lastChance-storage-slider-block-description">
+                            <span class="lastChance-storage-slider-block-description__itemTitle">
+                                Стул «Облако»
+                            </span>
+                            <div class="lastChance-storage-slider-block-description-priceBlock">
+                                <span class="lastChance-storage-slider-block-description-priceBlock__newPrice">
+                                    $200
+                                </span>
+                                <span class="lastChance-storage-slider-block-description-priceBlock__oldPrice">
+                                    $250
+                                </span>
+                            </div>  
+                        </div>
+                        <img src="images/lastChance/cloud.png" alt="cloud.png"> 
+                        <button class="lastChance-storage-slider-block__button">Купить</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="lastChance-storage-slider-block">
+                        <div class="lastChance-storage-slider-block-description">
+                            <span class="lastChance-storage-slider-block-description__itemTitle">
+                                Стул «Сова»
+                            </span>
+                            <div class="lastChance-storage-slider-block-description-priceBlock">
+                                <span class="lastChance-storage-slider-block-description-priceBlock__newPrice">
+                                    $240
+                                </span>
+                                <span class="lastChance-storage-slider-block-description-priceBlock__oldPrice">
+                                    $260
+                                </span>
+                            </div>  
+                        </div>
+                        <img src="images/lastChance/owl.png" alt="owl.png"> 
+                        <button class="lastChance-storage-slider-block__button">Купить</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="lastChance-storage-slider-block">
+                        <div class="lastChance-storage-slider-block-description">
+                            <span class="lastChance-storage-slider-block-description__itemTitle">
+                                Стул «Мая»
+                            </span>
+                            <div class="lastChance-storage-slider-block-description-priceBlock">
+                                <span class="lastChance-storage-slider-block-description-priceBlock__newPrice">
+                                    $280
+                                </span>
+                                <span class="lastChance-storage-slider-block-description-priceBlock__oldPrice">
+                                    $330
+                                </span>
+                            </div>  
+                        </div>
+                        <img src="images/lastChance/Maya.png" alt="Maya.png"> 
+                        <button class="lastChance-storage-slider-block__button">Купить</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="lastChance-storage-slider-block">
+                        <div class="lastChance-storage-slider-block-description">
+                            <span class="lastChance-storage-slider-block-description__itemTitle">
+                                Стул «Месси»
+                            </span>
+                            <div class="lastChance-storage-slider-block-description-priceBlock">
+                                <span class="lastChance-storage-slider-block-description-priceBlock__newPrice">
+                                    $280
+                                </span>
+                                <span class="lastChance-storage-slider-block-description-priceBlock__oldPrice">
+                                    $305
+                                </span>
+                            </div>  
+                        </div>
+                        <img src="images/lastChance/Messi.png" alt="Messi.png">
+                        <button class="lastChance-storage-slider-block__button">Купить</button> 
+                    </div>
+                </div>
+                <div>
+                    <div class="lastChance-storage-slider-block">
+                        <div class="lastChance-storage-slider-block-description">
+                            <span class="lastChance-storage-slider-block-description__itemTitle">
+                                Стул «Карамель»
+                            </span>
+                            <div class="lastChance-storage-slider-block-description-priceBlock">
+                                <span class="lastChance-storage-slider-block-description-priceBlock__newPrice">
+                                    $195
+                                </span>
+                                <span class="lastChance-storage-slider-block-description-priceBlock__oldPrice">
+                                    $245
+                                </span>
+                            </div>  
+                        </div>
+                        <img src="images/lastChance/caramel.png" alt="caramel.png"> 
+                        <button class="lastChance-storage-slider-block__button">Купить</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="lastChance-storage-slider-block">
+                        <div class="lastChance-storage-slider-block-description">
+                            <span class="lastChance-storage-slider-block-description__itemTitle">
+                                Стул «Облако»
+                            </span>
+                            <div class="lastChance-storage-slider-block-description-priceBlock">
+                                <span class="lastChance-storage-slider-block-description-priceBlock__newPrice">
+                                    $200
+                                </span>
+                                <span class="lastChance-storage-slider-block-description-priceBlock__oldPrice">
+                                    $250
+                                </span>
+                            </div>  
+                        </div>
+                        <img src="images/lastChance/cloud.png" alt="cloud.png"> 
+                        <button class="lastChance-storage-slider-block__button">Купить</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="lastChance-storage-slider-block">
+                        <div class="lastChance-storage-slider-block-description">
+                            <span class="lastChance-storage-slider-block-description__itemTitle">
+                                Стул «Сова»
+                            </span>
+                            <div class="lastChance-storage-slider-block-description-priceBlock">
+                                <span class="lastChance-storage-slider-block-description-priceBlock__newPrice">
+                                    $240
+                                </span>
+                                <span class="lastChance-storage-slider-block-description-priceBlock__oldPrice">
+                                    $260
+                                </span>
+                            </div>  
+                        </div>
+                        <img src="images/lastChance/owl.png" alt="owl.png"> 
+                        <button class="lastChance-storage-slider-block__button">Купить</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="lastChance-storage-slider-block">
+                        <div class="lastChance-storage-slider-block-description">
+                            <span class="lastChance-storage-slider-block-description__itemTitle">
+                                Стул «Мая»
+                            </span>
+                            <div class="lastChance-storage-slider-block-description-priceBlock">
+                                <span class="lastChance-storage-slider-block-description-priceBlock__newPrice">
+                                    $280
+                                </span>
+                                <span class="lastChance-storage-slider-block-description-priceBlock__oldPrice">
+                                    $330
+                                </span>
+                            </div>  
+                        </div>
+                        <img src="images/lastChance/Maya.png" alt="Maya.png"> 
+                        <button class="lastChance-storage-slider-block__button">Купить</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="lastChance-storage-slider-block">
+                        <div class="lastChance-storage-slider-block-description">
+                            <span class="lastChance-storage-slider-block-description__itemTitle">
+                                Стул «Месси»
+                            </span>
+                            <div class="lastChance-storage-slider-block-description-priceBlock">
+                                <span class="lastChance-storage-slider-block-description-priceBlock__newPrice">
+                                    $280
+                                </span>
+                                <span class="lastChance-storage-slider-block-description-priceBlock__oldPrice">
+                                    $305
+                                </span>
+                            </div>  
+                        </div>
+                        <img src="images/lastChance/Messi.png" alt="Messi.png">
+                        <button class="lastChance-storage-slider-block__button">Купить</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+
+    </footer>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-slider/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slider').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 1750,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            fade: true,
+            easing: "linear",
+            dotsClass: "topSliderDots"
+          });
+        });
+      </script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.feedback-feedbackSlider').slick({
+            dots: true,
+            infinite: false,
+            prevArrow: '<div class="middleSliderArrow middleSliderArrowLeft"></div>',
+            nextArrow: '<div class="middleSliderArrow middleSliderArrowRight"></div>'
+          });
+        });
+      </script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.lastChance-storage-slider').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            speed: 3000
+          });
+        });
+      </script>
+    </body>
 </html>
