@@ -1,0 +1,158 @@
+// Общие натсройки хэдера и настройки верхней навигационной панели
+    
+header
+    width: 1170px
+    .topNav-menu
+        display: flex
+        align-items: center
+        padding-top: 90px
+        width: 1170px
+        position: relative
+        z-index: 3
+        img
+            cursor: pointer
+        &-links
+            display: flex
+            justify-content: space-between
+            width: 380px
+            padding-left: 139px
+            a
+                font-size: 14px
+                font-family: "Open Sans"
+                font-weight: 400
+                text-decoration: none
+                text-transform: uppercase
+                line-height: 19px
+                color: $main_color
+                cursor: pointer
+                &:hover
+                    opacity: 80%
+        &-rightPanel
+            display: flex
+            position: absolute
+            right: 0 
+            img
+                &:last-child
+                    padding-left: 22px
+                cursor: pointer
+                &:hover
+                    opacity: 70%
+.logoText
+    font-family: "Playfair Display"
+    color: $main_color
+    text-transform: uppercase
+    width: 545px
+    padding-top: 125px
+    font-size: 57px
+    font-weight: 700
+    line-height: 83px
+    display: inline-block
+    z-index: 2
+
+// Настройки Блока слайдера  
+.sliderWrap
+    position: absolute
+    top: 0
+    width: 1098px
+    height: 751px
+    z-index: 1
+    .slider
+        .slider-block
+            width: 1098px
+            display: flex
+            justify-content: space-between
+            &-description
+                width: 238px
+                display: flex
+                flex-direction: column
+                padding-top: 435px
+                p
+                    font-family: "Open Sans"
+                    font-weight: 400
+                    font-size: 20px
+                    line-height: 27px
+                &-text
+                    padding-top: 10px
+                    display: block
+                    &__price
+                        font-family: "Open Sans"
+                        font-weight: 400
+                        font-size: 20px
+                        line-height: 27px
+                    &__sell_price
+                        font-family: "Open Sans"
+                        font-weight: 600
+                        font-size: 30px
+                        line-height: 40px
+                        padding-left: 22px
+                &__button
+                    margin-top: 35px
+                    padding: 18px 88px 18px 87px
+                    font-size: 16px
+                    font-family: "Open Sans"
+                    line-height: 22px
+                    text-transform: uppercase
+                    background-color: $main_color
+                    border: none
+                    color: #ffffff
+                    cursor: pointer
+                    &:hover
+                        background-color: lighten($main_color, 10%)
+                    &:active, &:focus
+                        background-color: lighten($main_color, 15%)
+                        outline: none
+                    &:focus
+        img
+            width: 532px
+            height: 751px
+
+// Настройки элементов слайдера
+.topSliderDots
+    display: flex
+    flex-direction: column
+    position: absolute
+    top: 35%
+    right: -100px
+    font-family: "Playfair Display"
+    padding: 0
+    margin: 0
+    list-style: none
+    li
+        &[role=presentation]
+            width: 60px
+            height: 60px
+            display: flex
+            justify-content: center
+        &[aria-label="1 of 4"]
+            content: "01"            
+    button
+        border: none
+        background-color: transparent
+        color: #000
+        opacity: 30%
+        cursor: pointer
+        font-size: 20px
+        font-weight: 400
+        &:active, &:focus
+            outline: none
+            border: none
+        &:active
+            opacity: 1
+        &:hover
+            opacity: 60%
+    .slick-active
+        border-right: 2px solid black
+        width: 60px
+        height: 60px
+        box-sizing: border-box
+        button
+            opacity: 1
+            font-size: 40px
+            box-sizing: border-box
+
+                
+            
+
+            
+
+

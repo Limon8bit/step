@@ -1,0 +1,30 @@
+@import _variables.sass
+body
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    background-color: #F9FDFF
+    &::after
+        content: ""
+        width: 38%
+        height: 751px
+        background-color: $peach
+        position: absolute
+        right: 0
+        z-index: -1
+    &::before
+        content: ""
+        height: 545px
+        width: 53%
+        position: absolute
+        top: 1960px
+        left: 0
+        z-index: -1
+        background-color: $peach
+@import _fonts.sass
+@import _header.sass
+@import _latest.sass
+@import _feedback.sass
+@import _lastChance.sass
+@import _footer.sass

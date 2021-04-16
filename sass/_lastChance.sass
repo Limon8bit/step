@@ -1,0 +1,112 @@
+.lastChance
+    width: 1170px
+    padding-top: 205px
+    &-titleBlock
+        span
+            text-transform: uppercase
+            font-family: "Playfair Display"
+            font-weight: 700
+            font-size: 28px
+            line-height: 37px
+        div
+            width: 90px
+            height: 4px
+            background-color: $main_color
+            margin-top: 7px
+    &-sortItem
+        padding-top: 35px
+        width: 275px
+        display: flex
+        justify-content: space-between
+        a
+            text-decoration: none
+            color: #000
+            opacity: 40%
+            border: none
+            outline: none
+            font-family: "Open Sans"
+            flex-size: 16px
+            &:hover
+                opacity: 60%
+            &:focus
+                text-decoration: underline
+                opacity: 1
+                font-weight: 600
+    &-storage
+        padding-top: 25px  
+        display: flex 
+        &-slider
+            display: flex
+            justify-content: space-between
+            width: 1170px
+            &-block
+                width: 210px
+                height: 355px     
+                background-color: #fff  
+                display: flex 
+                flex-direction: column
+                position: relative
+                box-sizing: border-box
+                margin-bottom: 60px
+                &-description
+                    padding-top: 25px
+                    padding-left: 25px
+                    z-index: 2
+                    &__itemTitle
+                        font-family: "Open Sans"
+                        font-size: 16px
+                        line-height: 22px
+                    &-priceBlock
+                        &__newPrice
+                            line-height: 38px
+                            font-size: 28px
+                            font-weight: 600
+                            padding-right: 10px
+                            color: $main_color
+                        &__oldPrice
+                            color: #979798
+                            text-decoration-line: line-through
+                img
+                    position: absolute
+                    right: 0
+                    bottom: 0
+                    z-index: 1
+                &__button
+                    padding: 19px 74px
+                    position: absolute
+                    cursor: pointer
+                    z-index: 1001
+                    color: white
+                    background-color: $main_color
+                    text-align: center
+                    text-transform: uppercase
+                    line-height: 22px
+                    font-family: "Open Sans"
+                    bottom: -58px
+                    border: none
+                    visibility: hidden
+                    outline: none
+                    &:hover
+                        background-color: lighten($main_color, 15%)
+                    &:active
+                        background-color: lighten($main_color, 20%)
+        .slick-list
+            overflow-y: visible
+        .draggable
+            .slick-slide
+                transition: 0.8s
+                box-shadow: none
+                width: 210px 
+                outline: none
+            .slick-active
+                .lastChance-storage-slider-block
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05)
+                    &:hover
+                        button
+                            visibility: visible
+                        &::before
+                            content: ""
+                            width: 210px
+                            height: 5px
+                            background-color: $main_color
+                            position: absolute                  
