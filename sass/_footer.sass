@@ -1,2 +1,61 @@
 .footer
-    padding-top: 200px 
+    width: 100% 
+    padding-top: 100px 
+    background-color: #ffffff
+    display: flex
+    flex-direction: column
+    align-items: center
+    &-wrap
+        width: 1160px
+        &-logoAndLinks
+            width: 1160px
+            display: flex
+            justify-content: space-between
+            &-links
+                width: 505px
+                display: flex
+                justify-content: space-between
+                &__link
+                    text-transform: uppercase
+                    font-family: "Robotic"
+                    font-weight: 600
+                    text-decoration: none
+                    color: $main_color
+                    &:hover
+                        color: lighten($main_color, 20%)
+                    &:active
+                        color: lighten($main_color, 15%)
+        &-contacts
+            display: flex
+            align-self: flex-start
+            padding-top: 30px
+            width: 380px
+            justify-content: space-between
+        &-contact
+            a
+                display: flex
+                font-family: "Roboto"
+                font-size: 16px
+                line-height: 19px
+                text-decoration: none
+                color: $main_color
+            img
+                padding-right: 5px
+    &-underline  
+        width: 1160px 
+        opacity: 20% 
+        &-grayLine
+            margin-top: 30px
+            height: 1px
+            width: 1160px
+            background-color: $main_color
+            opacity: 20%     
+        &__text
+            padding-top: 10px
+            padding-bottom: 10px
+            float: right 
+            font-family: "Roboto"
+            font-size: 10px
+            line-height: 15px
+
+
