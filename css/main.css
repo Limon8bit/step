@@ -472,7 +472,7 @@ header .topNav-menu-rightPanel img:hover {
   border: none;
   outline: none;
   font-family: "Open Sans";
-  flex-size: 16px;
+  font-size: 16px;
 }
 
 .lastChance-sortItem a:hover {
@@ -488,6 +488,7 @@ header .topNav-menu-rightPanel img:hover {
 .lastChance-storage {
   padding-top: 25px;
   display: flex;
+  padding-bottom: 65px;
 }
 
 .lastChance-storage-slider {
@@ -592,5 +593,85 @@ header .topNav-menu-rightPanel img:hover {
 }
 
 .footer {
-  padding-top: 200px;
+  width: 100%;
+  padding-top: 100px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-wrap {
+  width: 1160px;
+}
+
+.footer-wrap-logoAndLinks {
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrap-logoAndLinks-links {
+  width: 505px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrap-logoAndLinks-links__link {
+  text-transform: uppercase;
+  font-family: "Robotic";
+  font-weight: 600;
+  text-decoration: none;
+  color: #303032;
+}
+
+.footer-wrap-logoAndLinks-links__link:hover {
+  color: #626266;
+}
+
+.footer-wrap-logoAndLinks-links__link:active {
+  color: #555559;
+}
+
+.footer-wrap-contacts {
+  display: flex;
+  align-self: flex-start;
+  padding-top: 30px;
+  width: 380px;
+  justify-content: space-between;
+}
+
+.footer-wrap-contact a {
+  display: flex;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #303032;
+}
+
+.footer-wrap-contact img {
+  padding-right: 5px;
+}
+
+.footer-underline {
+  width: 1160px;
+  opacity: 20%;
+}
+
+.footer-underline-grayLine {
+  margin-top: 30px;
+  height: 1px;
+  width: 1160px;
+  background-color: #303032;
+  opacity: 20%;
+}
+
+.footer-underline__text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: right;
+  font-family: "Roboto";
+  font-size: 10px;
+  line-height: 15px;
 }
