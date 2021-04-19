@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="slick-slider/slick.css">
@@ -24,9 +24,9 @@
                 <img src="images/bag.svg" alt="bag">
             </div>
         </div>
-        <div class="logoText">
+        <h2 class="logoText">
             Дизайнерская мебель
-        </div>
+        </h2>
         <div class="sliderWrap">
             <div class="slider">
                 <div>
@@ -52,7 +52,7 @@
                             </div> 
                             <button class="slider-block-description__button">Купить</button>
                         </div>
-                        <img src="images/homer.png" alt=""> <!--Картинка для понимания скорости затухания и появления следующего слайда. -->
+                        <img src="images/topSliderChair-withoutBG.png" alt=""> <!--Картинка для понимания скорости затухания и появления следующего слайда. -->
                     </div>
                 </div>   
                 <div>
@@ -117,8 +117,8 @@
         <div class="latest-bigBlock">
             <img src="images/whiteChokolate.png" alt="">
             <div>
-                <span class="latest-storage-block__item">Стол «Крем брюле»</span>
-                <span class="latest-storage-block__price">$320</span>
+                <span class="latest-storage-block__item">Стул офисный «Белый шоколад»</span>
+                <span class="latest-storage-block__price">$120</span>
             </div>
         </div>
     </section>
@@ -474,8 +474,26 @@
             slidesToScroll: 1,
             arrows: false,
             autoplay: true,
-            autoplaySpeed: 5000,
-            speed: 3000
+            autoplaySpeed: 0,
+            speed: 5000,
+            pauseOnFocus: true,
+            pauseOnHover: false,
+            responsive: [
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                }
+            ]   
           });
         });
       </script>
