@@ -18,6 +18,9 @@
             background-color: #ffffff
             margin-top: 30px
             box-sizing: border-box
+            cursor: pointer
+            &:hover
+                background-color: $peach
             &__item
                 font-family: "Open Sans"
                 font-size: 20px
@@ -34,6 +37,7 @@
                 margin-top: 0
                 align-items: flex-start
                 justify-content: space-around
+                cursor: default
                 div
                     span
                         text-transform: uppercase
@@ -61,7 +65,6 @@
                     align-items: center
                     margin-top: -28px
             &:last-child
-                background-color: $peach
                 div
                     display: flex
                     flex-direction: column
@@ -73,12 +76,19 @@
         width: 570px
         display: flex
         flex-direction: column
+        align-items: center
         background-color: #ffffff
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03)
+        &:hover
+                background-color: $peach
+                cursor: pointer
+        img
+            padding-top: 20px
         div
             display: flex
             flex-direction: column
             align-items: center
-            margin-top: -16px
+            margin-top: 40px
+            margin-bottom: 25px
                 
             
