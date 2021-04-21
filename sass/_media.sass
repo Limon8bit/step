@@ -72,8 +72,346 @@
             &-slider
                 width: 700px
     .footer
+        width: 768px
         &-wrap
-            width: 748px
+            width: 98%
         &-underline
             &-grayLine
-                width: 768px
+                width: 100%
+@media screen and (max-width: 425px)
+    body
+        &::after
+            height: 475px
+            width: 215px
+        &::before
+            display: none
+    header
+        width: 405px
+        .topNav-menu
+            margin-left: -10px
+            width: 425px
+            padding-top: 20px
+            background-color: #ffffff
+            padding-bottom: 20px
+            img
+                padding-left: 15px
+            &-links
+                display: none
+            &-rightPanel
+                right: 0
+                .mobileMenu-show
+                    padding-left: 40px
+                    padding-right: 25px
+                    input[type="checkbox"]
+                        display: flex
+                        position: absolute
+                        right: 100px
+                        width: 1px
+                        height: 1px
+                        &::before
+                            content: ""
+                            width: 28px
+                            height: 19px
+                            background-image: url(../images/mobileMenuOpen.svg)
+                            position: absolute
+                            left: 50px
+                            top: 8px
+                            z-index: 1005
+                        &:checked
+                            &::before
+                                background-image: none
+                                width: 30px
+                                height: 30px
+                                top: 9px
+                                left: 46px          
+        .logoText
+            font-size: 27px
+            line-height: 46px
+            width: 288px
+            padding-top: 450px
+            padding-left: 15px
+        .sliderWrap
+            width: 415px
+            .slider
+                .slider-block
+                    flex-direction: column-reverse
+                    &-description
+                        padding-top: 135px
+                        &__button
+                            width: 405px
+                    img
+                        width: 85%
+                        height: auto
+                        align-self: flex-end
+        .topSliderDots
+            width: 360px
+            left: 0
+            top: 850px
+            display: flex
+            flex-direction: row
+            li
+                border-top: 2px solid $sliderGray
+                button
+                    visibility: hidden
+            .slick-active
+                border-right: none
+                border-top: 2px solid $main_color
+    .latest
+        margin: 0 auto
+        padding-top: 330px
+        width: 405px
+        flex-direction: column
+        z-index: 1005
+        &-storage
+            width: 400px
+            &-block
+                width: 400px
+                &:first-child
+                    padding-bottom: 40px
+                &:nth-child(2)
+                    height: 280px
+                    
+        &-bigBlock
+            width: 400px
+            margin-top: 30px
+            height: 280px
+            img
+                width: 180px
+                height: 206px
+            div
+                margin: 0
+    .feedback
+        display: none
+    .lastChance
+        padding-top: 780px
+        width: 405px
+        &-sortItem
+            padding-top: 20px
+        &-storage
+            &-slider
+                width: 405px
+                &-block
+                    width: 405px
+                    img
+                        width: 250px
+            .draggable
+                .slick-active
+                    .lastChance-storage-slider-block
+                        &__button
+                            width: 405px
+                        &:hover
+                            button
+                                visibility: visible
+                            &::before
+                                width: 405px
+    .footer
+        width: 100%
+        &-wrap
+            width: 98%
+            &-logoAndLinks
+                flex-direction: column
+                &-links
+                    width: 405px
+                    flex-wrap: wrap
+                    padding-top: 20px
+        &-underline
+            &-grayLine
+                width: 100%
+@media screen and (max-width: 375px)
+    body
+        &::after
+            height: 400px
+            width: 195px
+    header
+        width: 375px
+        .topNav-menu
+            width: 375px
+            margin-left: 0
+            &-rightPanel
+                right: 0
+                .mobileMenu-show
+                    padding-left: 80px
+                    padding-right: 25px
+                    .mobileMenu
+                        width: 375px
+                        left: -184px    
+        .logoText
+            padding-top: 350px
+            display: inline-block
+        .sliderWrap
+            width: 375px
+            .slider
+                .slider-block
+                    &-description
+                        padding-top: 125px
+                        padding-left: 15px
+                        &__button
+                            width: 345px
+        .topSliderDots
+            width: 340px
+            top: 775px
+            padding-left: 15px
+    .latest
+        width: 340px
+        flex-direction: column
+        &-storage
+            width: 340px
+            &-block
+                width: 340px    
+        &-bigBlock
+            width: 340px
+            margin-top: 30px
+            height: 280px
+            div
+                margin: 0
+                text-align: center
+    .lastChance
+        padding-top: 780px
+        width: 340px
+        &-titleBlock
+            width: 340px
+        &-sortItem
+            width: 340px
+        &-storage
+            width: 340px
+            &-slider
+                width: 340px
+                &-block
+                    width: 340px
+            .draggable
+                .slick-active
+                    .lastChance-storage-slider-block
+                        &__button
+                            width: 340px
+                        &:hover
+                            button
+                                visibility: visible
+                            &::before
+                                width: 340px
+    .footer
+        width: 100%
+        padding-top: 30px
+        &-wrap
+            width: 335px
+            &-logoAndLinks
+                &-links
+                    width: 250px
+                    display: block
+                    &__link
+                        display: inline-block
+                        &:nth-child(1)
+                            padding-right: 60px
+                            padding-bottom: 20px
+                        &:nth-child(2)
+                            	
+                        &:nth-child(3)
+                            padding-right: 60px
+            &-contacts
+                flex-direction: column
+                width: 170px
+                &-tel
+                    padding-bottom: 20px
+        &-underline
+            &-grayLine
+                width: 100%
+            &__text
+                text-align: center
+@media screen and (max-width: 320px)
+    body
+        &::after
+            height: 335px
+            width: 170px
+    header
+        width: 320px
+        .topNav-menu
+            width: 320px
+            margin-left: 0
+            &-rightPanel
+                right: 0
+                .mobileMenu-show
+                    padding-left: 80px
+                    padding-right: 25px
+                    .mobileMenu
+                        width: 320px
+                        left: -129px    
+        .logoText
+            padding-top: 300px
+            display: inline-block
+        .sliderWrap
+            width: 300px
+            .slider
+                .slider-block
+                    &-description
+                        padding-top: 125px
+                        padding-left: 15px
+                        &__button
+                            width: 300px
+        .topSliderDots
+            width: 300px
+            top: 705px
+            padding-left: 15px
+    .latest
+        width: 300px
+        flex-direction: column
+        &-storage
+            width: 300px
+            &-block
+                width: 300px    
+        &-bigBlock
+            width: 300px
+            height: 280px
+            img
+                padding-top: 0
+            div
+                margin: 0
+                text-align: center
+    .lastChance
+        width: 300px
+        &-titleBlock
+            width: 300px
+        &-sortItem
+            width: 300px
+        &-storage
+            width: 300px
+            &-slider
+                width: 300px
+                &-block
+                    width: 300px
+            .draggable
+                .slick-active
+                    .lastChance-storage-slider-block
+                        &__button
+                            width: 300px
+                        &:hover
+                            button
+                                visibility: visible
+                            &::before
+                                width: 100%
+    .footer
+        width: 100%
+        padding-top: 30px
+        &-wrap
+            width: 300px
+            &-logoAndLinks
+                &-links
+                    width: 250px
+                    display: block
+                    &__link
+                        display: inline-block
+                        &:nth-child(1)
+                            padding-right: 60px
+                            padding-bottom: 20px
+                        &:nth-child(2)
+                            	
+                        &:nth-child(3)
+                            padding-right: 60px
+            &-contacts
+                flex-direction: column
+                width: 170px
+                &-tel
+                    padding-bottom: 20px
+        &-underline
+            &-grayLine
+                width: 100%
+            &__text
+                text-align: center

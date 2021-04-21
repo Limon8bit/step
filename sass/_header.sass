@@ -31,12 +31,19 @@ header
             display: flex
             position: absolute
             right: 0 
-            img
-                &:last-child
-                    padding-left: 22px
+            &__item
+                padding-left: 20px    
                 cursor: pointer
                 &:hover
                     opacity: 70%
+            .mobileMenu-show
+                opacity: 1
+                padding: 0
+                input[type="checkbox"]
+                    display: none
+                    &:checked
+                        & + .mobileMenu
+                            display: flex
 .logoText
     font-family: "Playfair Display"
     color: $main_color
@@ -121,9 +128,7 @@ header
             width: 60px
             height: 60px
             display: flex
-            justify-content: center
-        &[aria-label="1 of 4"]
-            content: "01"            
+            justify-content: center            
     button
         border: none
         background-color: transparent
@@ -140,7 +145,7 @@ header
         &:hover
             opacity: 60%
     .slick-active
-        border-right: 2px solid black
+        border-right: 2px solid $main_color
         width: 60px
         height: 60px
         box-sizing: border-box
