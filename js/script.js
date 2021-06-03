@@ -1,90 +1,84 @@
-// Задача 1 (Done)
+'use strict'
+// Задача 1
 
-// Реализуйте и экспортируйте по умолчанию функцию, которая определяет, является ли переданное число натуральной степенью тройки. Например, число 27 — это третья степень: 3^3, а 81 — это четвёртая: 3^4.
+// Реализуйте функцию, которая находит максимальное значение в массиве. Агрегацией называются любые вычисления, которые, как правило, строятся на основе всего набора данных, например, поиск максимального, среднего, суммы и так далее. 
 
-// Взял определение до десятой степени, можно и больше взять, поменяв в цикле for условие.
-
-// const isPowerOfThree = number => {
-//     let degree = 1;
-//     for (degree; degree <= 10; degree ++) {
-//         if (number === (3 ** degree)) {
-//             return (true + " (3^" + degree +")");
+// const calculateMax = someArray => {
+//     let maxOfTwo = null;
+//     for (let i = 0; i < someArray.length; i++) {
+//         if (maxOfTwo < someArray[i]) {
+//             maxOfTwo = someArray[i];
 //         }
 //     }
-//     return false;
+//     return maxOfTwo;
 // }
-// console.log(isPowerOfThree(27));
+// const arrayNull = [];
+// const anyArray = [3, 2,-10, 38, 0];
+// console.log(calculateMax(arrayNull));
+// console.log(calculateMax(anyArray));
 
+// Задача 2
 
+// Реализуйте функцию, которая находит сумму значений в массиве.
 
-// Задача 2 (Done)
-
-// "Счастливым" называют билет с номером, в котором сумма первой половины цифр равна сумме второй половины цифр. Номера могут быть произвольной длины, с единственным условием, что количество цифр всегда чётно, например: 33 или 2341 и так далее.
-
-// Билет с номером 385916 — счастливый, так как 3 + 8 + 5 = 9 + 1 + 6. Билет с номером 231002 не является счастливым, так как 2 + 3 + 1 != 0 + 0 + 2.
-
-// Реализуйте функцию, проверяющую является ли номер счастливым (номер — всегда строка). Функция должна возвращать true, если билет счастливый, или false, если нет.
-
-// Столкнулся со странным багом: Если число начинается  снуля, то длина строки от числа считается неверно.
-
-// const isLucky = ticketNumber => {
-//     const stringOfNumber = String(ticketNumber);
-//     const centerOfTicketNumber = (stringOfNumber.length / 2);
-//     let leftIteration = 0;
-//     let leftResult = 0;
-//     let rightIteration = centerOfTicketNumber;
-//     let rightResult = 0;
-//     for (;leftIteration < centerOfTicketNumber; leftIteration++) {
-//         leftResult += Number(stringOfNumber[leftIteration]);
+// const calculateSum = someArray => {
+//     let sumOfElements = 0;
+//     for (let element of someArray) {
+//         sumOfElements += element;
 //     }
-//     for (; rightIteration < stringOfNumber.length; rightIteration++) {
-//         rightResult += Number(stringOfNumber[rightIteration]);
-//     }
-//     if (leftResult == rightResult) {
-//         return true;
-//     } else {
-//         return false;
-//     }
+//     return sumOfElements;
 // }
-// console.log(isLucky(352721));
+// const arrayNull = [];
+// const anyArray = [3, 2,-10, 38, 0];
+// console.log(calculateSum(arrayNull));
+// console.log(calculateSum(anyArray));
 
-// Задача 3 (Done)
+// Задача 3 (WIP)
 
-// Создайте функцию isPerfect(), которая принимает число и возвращает true, если оно совершенное, и false — в ином случае.
+// Реализуйте функцию, которая принимает на вход в виде массива кошелёк с деньгами и название валюты и возвращает сумму денег указанной валюты.
+// Реализуйте данную функцию используя управляющие инструкции.
+// Параметры функции:
+// * Массив, содержащий купюры разных валют с различными номиналами
+// * Наименование валюты
 
-// Совершенное число — положительное целое число, равное сумме его положительных делителей (не считая само число). Например, 6 — идеальное число, потому что 6 = 1 + 2 + 3.
-
-// const isPerfect = number => {
-//     divisor = 1;
-//     result = 0;
-//     for (; divisor < number; divisor++) {
-//         if (number % divisor === 0) {
-//             result += divisor;
+// const getTotalAmount  = function(wallet, currency) { //Функция сортировки по валютам
+//     let result = 0;
+//     for (let i = 0; i < wallet.length; i++) {
+//         if ((currency[0] === wallet[i][0]) && (currency[1] === wallet[i][1]) && (currency[2] === wallet[i][2])) {
+//             result += Number(wallet[i].substring(4));
 //         }
 //     }
-//     if (result === number) {
-//         return true;
-//     } else {
-//         return false;
-//     }
+//     console.log(result);
 // }
-// console.log(isPerfect(496));
+
+// const money1 = ['eur 10', 'usd 1', 'usd 10', 'rub 50', 'usd 5'];
+// const money2 = ['eur 10', 'usd 1', 'eur 5', 'rub 100', 'eur 20', 'eur 100', 'rub 200'];
+// const money3 = ['eur 10', 'rub 50', 'eur 5', 'rub 10', 'rub 10', 'eur 100', 'rub 200'];
+
+// getTotalAmount(money1, "usd"); // 16
+// getTotalAmount(money2, 'eur'); // 135
+// getTotalAmount(money3, 'rub'); // 270
 
 // Задача 4
 
-// Функция Аккермана — простой пример вычислимой функции, которая не является примитивно рекурсивной.
+// Реализуйте и экспортируйте функцию. Эта функция принимает на вход массив и выпрямляет его: если элементами массива являются массивы, то функция сводит всё к одному массиву, раскрывая один уровень вложенности. В js эта функция реализована как метод flat() у массивов. Его использовать нельзя.
 
-// Она обозначается A(m,n), принимает два неотрицательных целых числа в качестве параметров и возвращает натуральное число. Эта функция растёт очень быстро, например, число A(4,4) настолько велико, что количество цифр в порядке этого числа многократно превосходит количество атомов в наблюдаемой части Вселенной.
-
-// const ackermannFunction = (m, n) => {
-//     for (;;) {
-//         if (m === 0) {
-//             return n + 1;
-//         } else if ((m > 0) && n === 0) {
-//             return ackermannFunction(m-1, 1);
-//         } if ((m > 0) && (n > 0)) {
-//             return ackermannFunction(m - 1, ackermannFunction(m, n - 1));
+// const flatMassive = array => {
+//     const result = [];
+//     for (let i = 0; i < array.length; i++) {
+//         if (typeof(array[i]) === "number") {
+//             result.push(array[i]);
+//         } else if (typeof(array[i]) === "object") {
+//             for (let counter = 0; counter < array[i].length; counter++) {
+//                 result.push(array[i][counter]);
+//             }
 //         }
 //     }
+//     return result;
 // }
-// console.log(ackermannFunction(3,1));
+// const flatten1 = []; // [] 
+// const flatten2 = [1, [3, 2], 9]; // [1, 3, 2, 9] 
+// const flatten3 = [1, [[2], [3]], [9]]; // [1, [2], [3], 9] 
+// console.log(flatMassive(flatten1));
+// console.log(flatMassive(flatten2));
+// console.log(flatMassive(flatten3));
