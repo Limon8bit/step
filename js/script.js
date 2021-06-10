@@ -1,84 +1,98 @@
 'use strict'
-// Задача 1
 
-// Реализуйте функцию, которая находит максимальное значение в массиве. Агрегацией называются любые вычисления, которые, как правило, строятся на основе всего набора данных, например, поиск максимального, среднего, суммы и так далее. 
+// Таймер вызова функции проверки состояний полей ввода.
+setInterval(disableButton, 500);
+// Активация кнопки отправки.
+function disableButton() {
+    // Получение данных от пользователя. Done
+    const userWeightCheck = document.getElementById("weight").value; 
+    const userHeightCheck = document.getElementById("height").value; 
+    const userAgeCheck = document.getElementById("age").value;
+    if ((userWeightCheck != "") && (userAgeCheck != "") && (userHeightCheck != "")) {
+        document.getElementById("submitButton").disabled = false;
+    }
+    // Получение данных от пользователя. Done
+    if ((userWeightCheck != "") || (userAgeCheck != "") || (userHeightCheck != "")) {
+        document.getElementById("resetButton").disabled = false;
+    }
+}
 
-// const calculateMax = someArray => {
-//     let maxOfTwo = null;
-//     for (let i = 0; i < someArray.length; i++) {
-//         if (maxOfTwo < someArray[i]) {
-//             maxOfTwo = someArray[i];
-//         }
-//     }
-//     return maxOfTwo;
-// }
-// const arrayNull = [];
-// const anyArray = [3, 2,-10, 38, 0];
-// console.log(calculateMax(arrayNull));
-// console.log(calculateMax(anyArray));
+// Функция рассчёта и вывода результата.
+function pushResult () {
+    // Определение коэфф. активности.
+    const activityСoefficient = () => {
+        const minimalActivity = document.getElementById("activity-minimal");
+        const lowActivity = document.getElementById("activity-low");
+        const mediumActivity = document.getElementById("activity-medium");
+        const highActivity = document.getElementById("activity-high");
+        if (minimalActivity.checked === true) {
+            return 1.2;
+        } else if (lowActivity.checked === true) {
+            return 1.375;
+        } else if (mediumActivity.checked === true) {
+            return 1.55; 
+        } else if (highActivity.checked === true) {
+            return 1.725;
+        } else {
+            return 1.9;
+        }
+    }
+    // Определение актуальных данных пользователя.
+    const userWeight = document.getElementById("weight").value; 
+    const userHeight = document.getElementById("height").value; 
+    const userAge = document.getElementById("age").value;
+    const userGender = () => {
+        const male = document.getElementById("gender-male");
+        if (male.checked === true) {
+            return "male";
+        } else {
+            return "female";
+        }
+    }
+    // Рассчётно-условный блок.
+    if (userGender() === "male") {
+        const caloriesCalculatorForMen = function() {
+            return Math.round(((10 * Number(userWeight)) + (6.25 * Number(userHeight)) + (5 * Number(userAge)) + 5) * activityСoefficient());
+        }
+        document.getElementById("calories-norm").textContent = Math.round(caloriesCalculatorForMen()); //Норма калорий
+        document.getElementById("calories-minimal").textContent = Math.round(caloriesCalculatorForMen() * 0.85); // Минимум калорий (уменьшение веса)
+        document.getElementById("calories-maximal").textContent = Math.round(caloriesCalculatorForMen() * 1.15); // Максимум калорий (увеличение веса)
+    } else {
+        const caloriesCalculatorForWomen = () => {
+            return Math.round(((10 * Number(userWeight)) +(6.25 * Number(userHeight)) - (5 * Number(userAge)) - 161) * activityСoefficient());
+        }
+        document.getElementById("calories-norm").textContent = Math.round(caloriesCalculatorForWomen()); //Норма калорий
+        document.getElementById("calories-minimal").textContent = Math.round(caloriesCalculatorForWomen() * 0.85); // Минимум калорий (уменьшение веса)
+        document.getElementById("calories-maximal").textContent = Math.round(caloriesCalculatorForWomen() * 1.15); // Максимум калорий (увеличение веса)
+    }
+}
 
-// Задача 2
+// Блок функций событий.
+let submitButton = document.getElementById("submitButton");
+let resetButton = document.getElementById("resetButton");
+const resultPanel = document.getElementById("counterResult");
 
-// Реализуйте функцию, которая находит сумму значений в массиве.
+// Включени отображения результата.
+function showResult() {
+    resultPanel.style.opacity = "1";
+    resultPanel.style.visibility = "visible";
+}
 
-// const calculateSum = someArray => {
-//     let sumOfElements = 0;
-//     for (let element of someArray) {
-//         sumOfElements += element;
-//     }
-//     return sumOfElements;
-// }
-// const arrayNull = [];
-// const anyArray = [3, 2,-10, 38, 0];
-// console.log(calculateSum(arrayNull));
-// console.log(calculateSum(anyArray));
-
-// Задача 3 (WIP)
-
-// Реализуйте функцию, которая принимает на вход в виде массива кошелёк с деньгами и название валюты и возвращает сумму денег указанной валюты.
-// Реализуйте данную функцию используя управляющие инструкции.
-// Параметры функции:
-// * Массив, содержащий купюры разных валют с различными номиналами
-// * Наименование валюты
-
-// const getTotalAmount  = function(wallet, currency) { //Функция сортировки по валютам
-//     let result = 0;
-//     for (let i = 0; i < wallet.length; i++) {
-//         if ((currency[0] === wallet[i][0]) && (currency[1] === wallet[i][1]) && (currency[2] === wallet[i][2])) {
-//             result += Number(wallet[i].substring(4));
-//         }
-//     }
-//     console.log(result);
-// }
-
-// const money1 = ['eur 10', 'usd 1', 'usd 10', 'rub 50', 'usd 5'];
-// const money2 = ['eur 10', 'usd 1', 'eur 5', 'rub 100', 'eur 20', 'eur 100', 'rub 200'];
-// const money3 = ['eur 10', 'rub 50', 'eur 5', 'rub 10', 'rub 10', 'eur 100', 'rub 200'];
-
-// getTotalAmount(money1, "usd"); // 16
-// getTotalAmount(money2, 'eur'); // 135
-// getTotalAmount(money3, 'rub'); // 270
-
-// Задача 4
-
-// Реализуйте и экспортируйте функцию. Эта функция принимает на вход массив и выпрямляет его: если элементами массива являются массивы, то функция сводит всё к одному массиву, раскрывая один уровень вложенности. В js эта функция реализована как метод flat() у массивов. Его использовать нельзя.
-
-// const flatMassive = array => {
-//     const result = [];
-//     for (let i = 0; i < array.length; i++) {
-//         if (typeof(array[i]) === "number") {
-//             result.push(array[i]);
-//         } else if (typeof(array[i]) === "object") {
-//             for (let counter = 0; counter < array[i].length; counter++) {
-//                 result.push(array[i][counter]);
-//             }
-//         }
-//     }
-//     return result;
-// }
-// const flatten1 = []; // [] 
-// const flatten2 = [1, [3, 2], 9]; // [1, 3, 2, 9] 
-// const flatten3 = [1, [[2], [3]], [9]]; // [1, [2], [3], 9] 
-// console.log(flatMassive(flatten1));
-// console.log(flatMassive(flatten2));
-// console.log(flatMassive(flatten3));
+// Функция событие отображения результата и рассчёта.
+submitButton.onclick = function(event) {
+    event.preventDefault();
+    pushResult();
+    showResult();
+    document.getElementById("calories-norm").value = "5";
+}
+//Функция события обнуления полей.
+resetButton.onclick = function(event) {
+    event.preventDefault();
+    resultPanel.style.opacity = "0";
+    resultPanel.style.visibility = "hidden";
+    document.getElementById("weight").value = "";
+    document.getElementById("age").value = "";
+    document.getElementById("height").value = "";
+    document.getElementById("gender-male").checked = true;
+    document.getElementById("activity-minimal").checked = true;
+}
